@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>HTML table search using JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="academe.css">
+	<script src="academe.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" id="searchBox" class="search_box" />
+            <span class="reset_hint"><i>Esc</i> to reset search</span></td>
+        </tr>
+        <tr>
+            <td>
+                <table id="dataTable" border="1" class="table">
+                    <tr><th>Name</th><th>Subject</th><th>Hours Tutoring</th><th>State</th><th>Visit Profile</th></tr>
+                    <tr><td>Alfred Hitchcock</td><td>Literature</td><td>145</td><td>Alabama</td><td><a href="https://www.youtube.com/watch?v=gBdIVVgyGxM">Click here</a></td></tr>
+                    <tr><td>Matthew Mihordea</td><td>Chemistry</td><td>234</td><td>Alaska</td><td>Click Here</td></tr>
+                    <tr><td>Julie Miller</td><td>Geometry</td><td>548</td><td>Arkansas</td><td>Click Here</td></tr>
+                    <tr><td>Luisa Brockman</td><td>Spanish</td><td>698</td><td>Florida</td><td>Click Here</td></tr>
+                    <tr><td>Greg Mervich</td><td>Engineering</td><td>954</td><td>Georgia</td><td>Click Here</td></tr>
+                    <tr><td>Beth Smith</td><td>Precalculus</td><td>345</td><td>California</td><td>Click Here</td></tr>
+                    <tr><td>Nadia Vincelli</td><td>French</td><td>254</td><td>Ohio</td><td>Click Here</td></tr>
+                    <tr><td>Julia Guo</td><td>Chinese</td><td>372</td><td>Mississippi</td><td>Click Here</td></tr>
+                    <tr><td>Jen Pennington</td><td>Arithmetic</td><td>880</td><td>Kentucky</td><td>Click Here</td></tr>
+                    <tr><td>Esther Lim</td><td>Grammar</td><td>3573</td><td>Illinois</td><td>Click Here</td></tr>
+                    <tr><td>Darshleen Kaur</td><td>Physics</td><td>235</td><td>Arizona</td><td>Click Here</td></tr>
+                    <tr><td>Samantha Kitchens</td><td>Government</td><td>839</td><td>Colorado</td><td>Click Here</td></tr>
+                    <tr><td>Noah McClintock</td><td>Algebra</td><td>374</td><td>Connecticut</td><td>Click Here</td></tr>
+                    <tr><td>Daniel Jones</td><td>World History</td><td>327</td><td>Delaware</td><td>Click Here</td></tr>
+                    <tr><td>Phil Dunphy</td><td>Biology</td><td>634</td><td>Minnesota</td><td>Click Here</td></tr>
+                    <tr><td>Susan Sunshine</td><td>SAT prep</td><td>1364</td><td>Missouri</td><td>Click Here</td></tr>
+                    <tr><td>Norm Peterson</td><td>Economics</td><td>285</td><td>Rhode Island</td><td>Click Here</td></tr>
+                    <tr><td>Mia Dapolite</td><td>American History</td><td>278</td><td>Texas</td><td>Click Here</td></tr>
+                    <tr><td>Bernard Parent</td><td>Social Studies</td><td>512</td><td>Utah</td><td>Click Here</td></tr>
+                    <tr><td>Aaron Wyles</td><td>Writing</td><td>562</td><td>Tennessee</td><td>Click Here</td></tr>
+                    <tr><td>Cecilia Thompson</td><td>Reading</td><td>835</td><td>Vermont</td><td>Click Here</td></tr>
+                    <tr><td>Andrew James</td><td>Guitar</td><td>283</td><td>Virginia</td><td>Click Here</td></tr>
+                    <tr><td>Max Russo</td><td>Latin</td><td>784</td><td>New York</td><td>Click Here</td></tr>
+                    <tr><td>Donna Coleman</td><td>Earth Science</td><td>348</td><td>Montana</td><td>Click Here</td></tr>
+                    <tr><td>Joshua Martinez</td><td>Digital Art</td><td>389</td><td>Nebraska</td><td>Click Here</td></tr>
+                    <tr><td>Colleen Whitlock</td><td>Computer Science</td><td>652</td><td>Oregon</td><td>Click Here</td></tr>
+                    <tr><td>Cynthia Davis</td><td>Healthcare</td><td>732</td><td>Pennsylvania</td><td>Click Here</td></tr>
+                    <tr><td>James Clifford</td><td>Forensics</td><td>276</td><td>Wyoming</td><td>Click Here</td></tr>
+                    <tr><td>Kevin Solis</td><td>ACT Prep</td><td>734</td><td>Maryland</td><td>Click Here</td></tr>
+                    <tr><td>Eva Guzman</td><td>Vioin</td><td>1263</td><td>Maine</td><td>Click Here</td></tr>
+                    <tr><td>Carol Law</td><td>Pyschology</td><td>892</td><td>Kansas</td><td>Click Here</td></tr>
+                    <tr><td>John Cash</td><td>Piano</td><td>726</td><td>Louisiana</td><td>Click Here</td></tr>
+                    <tr><td>Yvette Rickett</td><td>Geography</td><td>845</td><td>Iowa</td><td>Click Here</td></tr>
+                    <tr><td>Warren Gault</td><td>Chorus</td><td>532</td><td>Wisconsin</td><td>Click Here</td></tr>
+                    <tr><td>Brittany Leach</td><td>Photography</td><td>492</td><td>Idaho</td><td>Click Here</td></tr>
+                    <tr><td>Elizabeth Nichols</td><td>Dance</td><td>324</td><td>Michigan</td><td>Click Here</td></tr>
+                    <tr><td>Edith Taylor</td><td>American Literature</td><td>345</td><td>South Carolina</td><td>Click Here</td></tr>
+                    <tr><td>Tanya Agler</td><td>Debate</td><td>248</td><td>Oklahoma</td><td>Click Here</td></tr>
+                    <tr><td>Cathy Delgado</td><td>American Sign Language</td><td>265</td><td>North Dakota</td><td>Click Here</td></tr>
+                    <tr><td>Katherine Nitta</td><td>Pre-Algebra</td><td>893</td><td>New Mexico</td><td>Click Here</td></tr>
+                    <tr><td>Joy Sorrell</td><td>Music Theory</td><td>348</td><td>Nevada</td><td>Click Here</td></tr>
+                    <tr><td>Christina Travers</td><td>Human Geography</td><td>537</td><td>Indiana</td><td>Click Here</td></tr>
+                    <tr><td>Jamie Anderson</td><td>German</td><td>535</td><td>Massachusetts</td><td>Click Here</td></tr>
+                    <tr><td>Ronald Switzer</td><td>Oceanography</td><td>364</td><td>South Dakota</td><td>Click Here</td></tr>
+                    <tr><td>Kevin Hall</td><td>Leadership and Ethics</td><td>352</td><td>New Hampshire</td><td>Click Here</td></tr>
+                    <tr><td>Doris Dougherty</td><td>Italian</td><td>537</td><td>Hawaii</td><td>Click Here</td></tr>
+                    <tr><td>Maria Daniels</td><td>Robotics</td><td>734</td><td>Washington</td><td>Click Here</td></tr>
+                    <tr><td>Michelle Bubble</td><td>Wood shop</td><td>234</td><td>North Carolina</td><td>Click Here</td></tr>
+                    <tr><td>Penny Johnson</td><td>British Literature</td><td>285</td><td>West Virginia</td><td>Click Here</td></tr>
+                    <tr><td>Charles Alexander</td><td>Martial Arts</td><td>624</td><td>New Jersey</td><td>Click Here</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        new TableSearch('searchBox', 'dataTable', { noResultsText: 'Nothing found! Try again' }).init();
+    </script>
+</body>
+</html>
