@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <button type="button" onclick="document.getElementById('signup').style.display='block'">New User? Sign up</button>
+
+      <p id="signup"style="display:none">
+      <input type="text" id="client_name" name="client_name" placeholder="Name" maxlength="30"> <br></br>
+      <input type="email" id="client_email" name="client_email" placeholder="Email address" maxlength="50"> <br></br>
+      <input type="text" id="client_phone" name="client_phone" placeholder="Phone number" maxlength="10"> <br></br>
+      <input name="password" required="required" type="password" id="password" placeholder="Password" maxlength="15"/> <br></br>
+      <input name="password_confirm" required="required" type="password" id="password_confirm" placeholder="Reenter Password" maxlength="15" oninput="check(this)" /> <br></br>
+      <script language='javascript' type='text/javascript'>
+      function check(input) {
+        if (input.value != document.getElementById('password').value) {
+          input.setCustomValidity('Password Must be Matching.');
+        } else {
+            input.setCustomValidity('');
+          }}
+      </script>
+      <input type="submit" />
+    </p>
+  <a href="abutton.html"><button>Returning user?Login.</button></a>
+  </form>
+</body>
+  </html>
