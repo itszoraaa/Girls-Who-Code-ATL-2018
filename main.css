@@ -15,7 +15,7 @@ maya blue: #5FBFF9
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -37,9 +37,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+}
+
+
 body {
 	line-height: 1;
+	color: #C9E4E7;
 }
+
+
+h1 {
+font-family: 'Poiret One', cursive;
+font-size: 100;
+color: #2F323A;
+
+}
+
+
+em {
+	font-family: 'Monoton', cursive;
+}
+
 
 ol, ul {
 	list-style: none;
@@ -84,16 +102,14 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		color
 	}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #ccc;
-	}
-
+]
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -118,13 +134,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: #FEFDFD;
+		color: #C9E4E7;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
 
 		a:hover {
-			color: ##FEFDFD;
+			color: #FEFDFD;
 			border-bottom-color: transparent;
 		}
 
@@ -140,25 +156,17 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-h1 {
-	font-size: 100;
-	font-family: 'Poiret One', cursive;
-}
 
 
-em {
-	font-size: 100;
-  font-family: 'Monoton', cursive;
-}
 
-	h1, h2, h3, h4, h5, h6 {
+h2, h4, h5, h6 {
 		color: inherit;
 		font-weight: 600;
 		line-height: 1.75em;
 		margin-bottom: 1em;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -176,6 +184,8 @@ em {
 	h3 {
 		font-size: 1.2em;
 		letter-spacing: -0.025em;
+		font-weight: 200;
+		color: inherit;
 	}
 
 	sub {
